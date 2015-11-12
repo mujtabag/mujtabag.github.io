@@ -47,7 +47,15 @@
       // Get Canvas2DContext
       var canvas = document.querySelector('canvas');
       var ctx = canvas.getContext("2d");
-      // Your code here
+      ctx.font="36pt Impact";
+      ctx.lineWidth=3;
+      ctx.fillStyle='white';
+      ctx.fillText(topLine,50,10);
+      ctx.fillText(bottomLine,50,200);
+      
+      ctx.strokeStyle='black';
+      ctx.strokeText(topLine,50,10);
+      ctx.strokeText(bottomLine,50,200);
     }
     
     function saveFile() {
