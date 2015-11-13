@@ -56,11 +56,15 @@
       ctx.fillStyle='white';
       ctx.strokeStyle='black';
       if (topLine != null) {
+          console.log(topLine);
+          console.log(canvas.width);
           ctx.fillText(topLine,canvas.width/2,40);
           ctx.strokeText(topLine,canvas.width/2,40);
       }
 
       if (bottomLine !=null) {
+          console.log(bottomLine);
+          console.log(canvas.height);
           ctx.fillText(bottomLine,canvas.width/2,canvas.height - 20);
           ctx.strokeText(bottomLine,canvas.width/2,canvas.height - 20);
       }
