@@ -48,14 +48,15 @@
       var canvas = document.querySelector('canvas');
       var ctx = canvas.getContext("2d");
       ctx.font="36pt Impact";
+      ctx.textAlign="center";
       ctx.lineWidth=3;
       ctx.fillStyle='white';
-      ctx.fillText(topLine,50,10);
-      ctx.fillText(bottomLine,50,200);
+      ctx.fillText(topLine,c.width/2,10);
+      ctx.fillText(bottomLine,c.width/2,200);
       
       ctx.strokeStyle='black';
-      ctx.strokeText(topLine,50,10);
-      ctx.strokeText(bottomLine,50,200);
+      ctx.strokeText(topLine,c.width/2,10);
+      ctx.strokeText(bottomLine,c.width/2,200);
     }
     
     function saveFile() {
