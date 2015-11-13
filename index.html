@@ -54,12 +54,15 @@
       ctx.textAlign="center";
       ctx.lineWidth=3;
       ctx.fillStyle='white';
-      ctx.fillText(topLine,ctx.width/2,10);
-      ctx.fillText(bottomLine,ctx.width/2,200);
-      
+      if (topLine != null) {
+          ctx.fillText(topLine,ctx.width/2,10);
+          ctx.strokeText(topLine,ctx.width/2,10);
+      }
       ctx.strokeStyle='black';
-      ctx.strokeText(topLine,ctx.width/2,10);
-      ctx.strokeText(bottomLine,ctx.width/2,200);
+      if (bottomLine !=null) {
+          ctx.fillText(bottomLine,ctx.width/2,200);
+          ctx.strokeText(bottomLine,ctx.width/2,200);
+      }
     }
     
     function saveFile() {
