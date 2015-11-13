@@ -47,21 +47,22 @@
       // Get Canvas2DContext
       var canvas = document.querySelector('canvas');
       var ctx = canvas.getContext("2d");
-      if (image != null) {
+      if (image != null) 
           ctx.drawImage(image,0,0,canvas.width,canvas.height);
-      }
+      
       ctx.font="36pt Impact";
-      ctx.textAlign="center";
+      ctx.textAlign='center';
       ctx.lineWidth=3;
       ctx.fillStyle='white';
-      if (topLine != null) {
-          ctx.fillText(topLine,ctx.width/2,10);
-          ctx.strokeText(topLine,ctx.width/2,10);
-      }
       ctx.strokeStyle='black';
+      if (topLine != null) {
+          ctx.fillText(topLine,canvas.width/2,40);
+          ctx.strokeText(topLine,canvas.width/2,40);
+      }
+
       if (bottomLine !=null) {
-          ctx.fillText(bottomLine,ctx.width/2,200);
-          ctx.strokeText(bottomLine,ctx.width/2,200);
+          ctx.fillText(bottomLine,canvas.width/2,canvas.height - 20);
+          ctx.strokeText(bottomLine,canvas.width/2,canvas.height - 20);
       }
     }
     
