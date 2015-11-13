@@ -78,7 +78,8 @@
         var image = new Image();
         image.onload = function() {
           
-          window.imageSrc = this;
+          //window.imageSrc = this;
+          image.src = fileObject.target.result;
           redrawMeme(window.imageSrc, null, null);
         }
         
