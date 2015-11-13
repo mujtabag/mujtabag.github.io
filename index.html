@@ -47,14 +47,6 @@
       // Get Canvas2DContext
       var canvas = document.querySelector('canvas');
       var ctx = canvas.getContext("2d");
-      var background = new Image();
-      
-      background.src = image;
-
-      // Make sure the image is loaded first otherwise nothing will draw.
-      //background.onload = function(){
-          ctx.drawImage(background,0,0);   
-     // };
       ctx.font="36pt Impact";
       ctx.textAlign="center";
       ctx.lineWidth=3;
